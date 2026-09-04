@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7c4dff"/>
+      <stop offset="1" stop-color="#3d1a8f"/>
+    </linearGradient>
+    <linearGradient id="pageL" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#efe7ff"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+    <linearGradient id="pageR" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#efe7ff"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.35" r="0.6">
+      <stop offset="0" stop-color="#ffd166" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#ffd166" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="512" height="512" rx="104" fill="url(#bg)"/>
+  <circle cx="256" cy="200" r="190" fill="url(#glow)"/>
+  <!-- cover / spine -->
+  <path d="M96 150 q160-46 160 0 q0-46 160 0 v232 q-160-40-160 0 q0-40-160 0 z" fill="#2a1466" opacity="0.55" transform="translate(0 14)"/>
+  <!-- pages -->
+  <path d="M104 146 q152-46 152 4 v226 q0-44-152-4 z" fill="url(#pageL)"/>
+  <path d="M408 146 q-152-46-152 4 v226 q0-44 152-4 z" fill="url(#pageR)"/>
+  <!-- text lines -->
+  <g stroke="#b9a3ff" stroke-width="10" stroke-linecap="round" opacity="0.9">
+    <path d="M136 196 q54-14 92 -4"/><path d="M136 236 q54-14 92 -4"/><path d="M136 276 q54-14 92 -4"/><path d="M136 316 q40-10 62 -4"/>
+    <path d="M376 196 q-54-14-92 -4"/><path d="M376 236 q-54-14-92 -4"/><path d="M376 276 q-54-14-92 -4"/><path d="M376 316 q-40-10-62 -4"/>
+  </g>
+  <!-- spine shadow -->
+  <path d="M256 150 v226" stroke="#7c4dff" stroke-width="8" stroke-linecap="round" opacity="0.7"/>
+  <!-- sparkles -->
+  <g fill="#ffd166">
+    <path d="M404 88 l10 26 26 10 -26 10 -10 26 -10-26 -26-10 26-10z"/>
+    <path d="M112 100 l6 16 16 6 -16 6 -6 16 -6-16 -16-6 16-6z" opacity="0.9"/>
+    <path d="M356 424 l5 13 13 5 -13 5 -5 13 -5-13 -13-5 13-5z" opacity="0.8"/>
+  </g>
+</svg>
